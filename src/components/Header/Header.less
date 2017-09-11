@@ -1,17 +1,28 @@
 @import "../../common.less";
 
 .header{
-    height: @header-height;
+    //height: @header-height;
+    text-align: center;
     &-menu{
         &-logo{
-            width: 30px;
+            float: left;
+            //width: 30px;
             height: 30px;
-            margin: 5px;
             display: inline-block;
-            img{
-                width: 100%;
-                height: 100%;
-                display: block;
+            line-height: @header-height;
+            margin: 0 20px;
+            &-img{
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            &-text{
+                color: @Gray;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 18px;
+                margin-left: 10px;
             }
         }
         &-tab{
